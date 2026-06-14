@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Asesoría | Esencia Natural</title>
+  <meta name="description" content="Ponte en contacto con Esencia Natural. Escríbenos para asesorías, cotizaciones de productos o pedidos directos vía WhatsApp o mediante nuestro formulario.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVEGACIÓN -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Esencia Natural</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO CONTACTO -->
+  <main class="container">
+    
+    <div class="section-header">
+      <p>Estamos para Escucharte</p>
+      <h2>Ponte en Contacto</h2>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Columna Izquierda: Información -->
+      <div class="contact-info-panel">
+        <h3>Información de Contacto</h3>
+        <p>¿Tienes dudas sobre algún suplemento, dosis o método de envío? Elige tu canal preferido y con gusto te asesoramos de forma gratuita.</p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-item-icon">📍</span>
+            <div class="contact-item-text">
+              <h4>Nuestra Sede</h4>
+              <p>Calle 45 #12-34, Sector Chapinero, Bogotá, Colombia</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-item-icon">📞</span>
+            <div class="contact-item-text">
+              <h4>WhatsApp Comercial</h4>
+              <p>+57 313 292 6005</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-item-icon">✉️</span>
+            <div class="contact-item-text">
+              <h4>Correo Soporte</h4>
+              <p>soporte@esencianatural.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <span class="contact-item-icon">🕒</span>
+            <div class="contact-item-text">
+              <h4>Horario de Atención</h4>
+              <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 2:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+          <h4 style="font-family: 'Outfit', sans-serif; color: var(--text-light); margin-bottom: 1rem;">Nuestras Redes</h4>
+          <div class="footer-socials">
+            <a href="#" class="social-link" style="background-color: rgba(255,255,255,0.1);"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" style="background-color: rgba(255,255,255,0.1);"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/573132926005" target="_blank" class="social-link" style="background-color: rgba(255,255,255,0.1);"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Columna Derecha: Formulario dinámico a WhatsApp -->
+      <div class="contact-form-panel">
+        <h3 style="margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">Escríbenos una Consulta</h3>
+        <p style="margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-muted);">Completa tus datos y escribe tu consulta. Al presionar enviar, abriremos un chat de WhatsApp con toda tu información ya redactada.</p>
+        
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="formName">Nombre Completo *</label>
+            <input type="text" id="formName" placeholder="Ej. María Pérez" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="formEmail">Correo Electrónico *</label>
+            <input type="email" id="formEmail" placeholder="Ej. maria@correo.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="formMotivo">¿Cuál es tu consulta? *</label>
+            <input type="text" id="formMotivo" placeholder="Ej. Asesoría sobre aceite de Lavanda, cotización de envío, etc." required>
+          </div>
+          
+          <div class="form-group">
+            <label for="formMsg">Mensaje Detallado *</label>
+            <textarea id="formMsg" placeholder="Escribe aquí tus dudas o los productos específicos que deseas cotizar..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 1rem 1.5rem; margin-top: 1rem;">
+            <i class="fa-brands fa-whatsapp"></i> Enviar consulta por WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAPA GOOGLE IFRAME MOCKUP -->
+    <div style="margin-top: 5rem; border-radius: var(--border-radius-lg); overflow: hidden; box-shadow: var(--shadow-md); height: 350px; border: 1px solid var(--border-color);">
+      <!-- Representación visual limpia de Google Maps usando SVG elegante/Iframe placeholder -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.818816911369!2d-74.0734005!3d4.6097102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99074ba27a69%3A0x86134b22c7a2d3c!2sChapinero%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1700000000000!5m2!1ses-419!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom: 1.2rem; display: inline-flex;">
+          <div class="logo-icon" style="background-color: var(--accent-color);">E</div>
+          <span class="logo-text" style="color: var(--text-light);">Esencia Natural</span>
+        </a>
+        <p>Tu aliado en salud orgánica. Ofrecemos suplementos, tés y aceites esenciales cuidadosamente seleccionados para nutrir tu vida diaria.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Enlaces Rápidos</h4>
+        <div class="footer-links">
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Categorías</h4>
+        <div class="footer-links">
+          <a href="productos.html?cat=suplementos">Suplementos</a>
+          <a href="productos.html?cat=tes">Tés e Infusiones</a>
+          <a href="productos.html?cat=cuidado">Cuidado Personal</a>
+          <a href="productos.html?cat=aceites">Aceites Esenciales</a>
+          <a href="productos.html?cat=superalimentos">Superalimentos</a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Contacto Comercial</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <span style="font-size: 1.1rem; color: var(--accent-color);"><i class="fa-solid fa-location-dot"></i></span>
+            <span>Calle 45 #12-34, Ciudad del Bienestar</span>
+          </div>
+          <div class="footer-contact-item">
+            <span style="font-size: 1.1rem; color: var(--accent-color);"><i class="fa-solid fa-phone"></i></span>
+            <span>+57 313 292 6005</span>
+          </div>
+          <div class="footer-contact-item">
+            <span style="font-size: 1.1rem; color: var(--accent-color);"><i class="fa-solid fa-envelope"></i></span>
+            <span>contacto@esencianatural.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Esencia Natural. Todos los derechos reservados. Diseñado con amor y respeto a la naturaleza.</p>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp Flotante -->
+  <a href="https://wa.me/573132926005?text=Hola%20🌿%20me%20gustaría%20ver%20el%20catálogo%20de%20productos." target="_blank" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="js/productos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Lógica para empacar formulario de contacto y mandarlo a WhatsApp
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contactForm');
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          
+          const name = document.getElementById('formName').value.trim();
+          const email = document.getElementById('formEmail').value.trim();
+          const motivo = document.getElementById('formMotivo').value.trim();
+          const msg = document.getElementById('formMsg').value.trim();
+          
+          const telefono = "573132926005"; // Número comercial
+          
+          const mensajeWhatsApp = `¡Hola! 🌿 Mi nombre es *${name}*.\n✉️ Mi correo: ${email}\n📌 *Motivo:* ${motivo}\n💬 *Consulta:* ${msg}`;
+          
+          const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensajeWhatsApp)}`;
+          
+          // Abrir WhatsApp en pestaña nueva
+          window.open(url, '_blank');
+          
+          // Feedback al usuario y reiniciar formulario
+          alert('¡Redirigiendo a WhatsApp para enviar tu consulta de forma personalizada!');
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

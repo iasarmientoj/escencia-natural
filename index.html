@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esencia Natural | Tienda Naturista y Bienestar Orgánico</title>
+  <meta name="description" content="Descubre suplementos orgánicos, aceites esenciales, tés relajantes y superalimentos. En Esencia Natural te ayudamos a vivir mejor con productos 100% naturales.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Iconos (Usamos FontAwesome para iconos de redes, etc. vía CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVEGACIÓN -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Esencia Natural</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-tagline">Bienestar 100% Orgánico</div>
+        <h1>El poder de la naturaleza en tu vida diaria</h1>
+        <p class="hero-desc">Descubre nuestra exclusiva selección de suplementos de alta pureza, tés seleccionados, cosmética natural y superalimentos diseñados para revitalizar tu cuerpo de forma natural y consciente.</p>
+        <div class="hero-btns">
+          <a href="productos.html" class="btn btn-primary">Explorar Tienda <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="contacto.html" class="btn btn-outline">Saber Más</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/placeholder.svg" alt="Bienestar natural - Esencia Natural">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN BENEFICIOS -->
+  <section class="benefits container">
+    <div class="section-header">
+      <p>Nuestra Promesa</p>
+      <h2>¿Por qué elegir Esencia Natural?</h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🌱</div>
+        <h3>100% Orgánico</h3>
+        <p>Productos cultivados sin pesticidas, metales pesados ni químicos artificiales dañinos para tu salud.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🧪</div>
+        <h3>Fórmulas Purificadas</h3>
+        <p>Procesos de extracción natural que conservan todos los nutrientes e ingredientes activos biológicos.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💬</div>
+        <h3>Pedido Fácil y Rápido</h3>
+        <p>¿Tienes dudas? Escríbenos por WhatsApp y te asesoramos para cerrar tu pedido de forma personalizada.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🚚</div>
+        <h3>Envíos Seguros</h3>
+        <p>Llegamos a todo el país. Empacado con materiales sostenibles que protegen el medio ambiente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CATEGORÍAS -->
+  <section class="categories container" style="background-color: var(--bg-dark); border-radius: var(--border-radius-lg); padding: 4rem 2rem;">
+    <div class="section-header">
+      <p>Variedad Natural</p>
+      <h2>Explora por Categorías</h2>
+    </div>
+    <div class="categories-grid">
+      <a href="productos.html?cat=suplementos" class="category-card">
+        <span class="category-emoji">🧴</span>
+        <h3>Suplementos</h3>
+      </a>
+      <a href="productos.html?cat=tes" class="category-card">
+        <span class="category-emoji">🍵</span>
+        <h3>Tés e Infusiones</h3>
+      </a>
+      <a href="productos.html?cat=cuidado" class="category-card">
+        <span class="category-emoji">🧼</span>
+        <h3>Cuidado Personal</h3>
+      </a>
+      <a href="productos.html?cat=aceites" class="category-card">
+        <span class="category-emoji">🫒</span>
+        <h3>Aceites Esenciales</h3>
+      </a>
+      <a href="productos.html?cat=superalimentos" class="category-card">
+        <span class="category-emoji">🥑</span>
+        <h3>Superalimentos</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="featured-products container">
+    <div class="section-header">
+      <p>Los Favoritos de la Casa</p>
+      <h2>Productos Destacados</h2>
+    </div>
+    
+    <div class="products-grid" id="featuredGrid">
+      <!-- Se cargarán 4 productos destacados dinámicamente con JS -->
+    </div>
+    
+    <div style="text-align: center; margin-top: 3.5rem;">
+      <a href="productos.html" class="btn btn-outline">Ver Todo el Catálogo <i class="fa-solid fa-list-ul"></i></a>
+    </div>
+  </section>
+
+  <!-- BANNER PROMOCIONAL / CONCEPTO -->
+  <section class="promo-banner" style="background-color: var(--primary-color); color: var(--text-light); padding: 5rem 0; text-align: center; position: relative;">
+    <div style="width: 90%; max-width: 800px; margin: 0 auto;">
+      <span style="font-family: 'Outfit', sans-serif; font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--secondary-light); display: block; margin-bottom: 1rem;">Estilo de Vida Saludable</span>
+      <h2 style="color: var(--text-light); font-size: 2.2rem; margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">Asesoría Personalizada al Instante</h2>
+      <p style="color: #B4C6AC; font-size: 1.1rem; margin-bottom: 2.5rem; line-height: 1.7;">No realizamos cobros en línea automatizados porque nos importa conocer tus necesidades. Cada pedido es atendido por uno de nuestros asesores expertos para brindarte recomendaciones de uso correctas.</p>
+      <a href="https://wa.me/573132926005?text=Hola%20🌿%20me%20gustaría%20recibir%20asesoría%20sobre%20sus%20productos%20naturistas." target="_blank" class="btn btn-accent"><i class="fa-brands fa-whatsapp"></i> Hablar con un Asesor</a>
+    </div>
+  </section>
+
+  <!-- SUSCRIPCIÓN NEWSLETTER -->
+  <section class="newsletter container" style="text-align: center; max-width: 600px; padding: 4rem 0;">
+    <h2 style="margin-bottom: 1rem;">Mantente en Sintonía con lo Natural</h2>
+    <p style="margin-bottom: 2rem;">Recibe consejos semanales de salud, recetas orgánicas y entérate antes que nadie de nuestros nuevos ingresos.</p>
+    <form style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte a nuestro boletín natural!'); this.reset();">
+      <input type="email" placeholder="Tu correo electrónico" required style="padding: 12px 20px; border-radius: 50px; border: 1.5px solid var(--border-color); font-family: 'Inter', sans-serif; font-size: 1rem; width: 100%; max-width: 350px; outline: none; background-color: var(--bg-card);">
+      <button type="submit" class="btn btn-primary">Suscribirme</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom: 1.2rem; display: inline-flex;">
+          <div class="logo-icon" style="background-color: var(--accent-color);">E</div>
+          <span class="logo-text" style="color: var(--text-light);">Esencia Natural</span>
+        </a>
+        <p>Tu aliado en salud orgánica. Ofrecemos suplementos, tés y aceites esenciales cuidadosamente seleccionados para nutrir tu vida diaria.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Enlaces Rápidos</h4>
+        <div class="footer-links">
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Categorías</h4>
+        <div class="footer-links">
+          <a href="productos.html?cat=suplementos">Suplementos</a>
+          <a href="productos.html?cat=tes">Tés e Infusiones</a>
+          <a href="productos.html?cat=cuidado">Cuidado Personal</a>
+          <a href="productos.html?cat=aceites">Aceites Esenciales</a>
+          <a href="productos.html?cat=superalimentos">Superalimentos</a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Contacto Comercial</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <span style="font-size: 1.1rem; color: var(--accent-color);"><i class="fa-solid fa-location-dot"></i></span>
+            <span>Calle 45 #12-34, Ciudad del Bienestar</span>
+          </div>
+          <div class="footer-contact-item">
+            <span style="font-size: 1.1rem; color: var(--accent-color);"><i class="fa-solid fa-phone"></i></span>
+            <span>+57 313 292 6005</span>
+          </div>
+          <div class="footer-contact-item">
+            <span style="font-size: 1.1rem; color: var(--accent-color);"><i class="fa-solid fa-envelope"></i></span>
+            <span>contacto@esencianatural.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Esencia Natural. Todos los derechos reservados. Diseñado con amor y respeto a la naturaleza.</p>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp Flotante -->
+  <a href="https://wa.me/573132926005?text=Hola%20🌿%20me%20gustaría%20ver%20el%20catálogo%20de%20productos." target="_blank" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="js/productos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Cargar 4 productos destacados en el Home
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('featuredGrid');
+      if (grid && typeof PRODUCTOS !== 'undefined') {
+        // Seleccionamos 4 productos específicos representativos
+        const destacadosIds = [1, 9, 13, 19];
+        const destacados = PRODUCTOS.filter(p => destacadosIds.includes(p.id));
+        
+        destacados.forEach(prod => {
+          const card = document.createElement('div');
+          card.className = 'product-card';
+          
+          card.innerHTML = `
+            <span class="product-badge">${prod.categoriaLabel}</span>
+            <div class="product-image-container">
+              <img src="${prod.imagen}" alt="${prod.nombre}" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title"><a href="producto.html?id=${prod.id}">${prod.nombre}</a></h3>
+              <div class="product-price">$${prod.precio.toLocaleString('es-CO')} COP</div>
+              <p class="product-desc">${prod.descripcionCorta}</p>
+              <div class="product-card-btns">
+                <a href="producto.html?id=${prod.id}" class="btn btn-outline">Detalle</a>
+                <a href="${generarLinkWhatsApp(prod.nombre, prod.precio, 1)}" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Pedir</a>
+              </div>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

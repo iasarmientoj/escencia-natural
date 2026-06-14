@@ -1,0 +1,6 @@
+.gemini/
+.idea/
+.vscode/
+*.log
+Thumbs.db
+.DS_Store
